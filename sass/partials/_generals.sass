@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before
+    box-sizing: border-box
+
+img
+    max-width: 100%
+    height: auto
+    
+body
+    font-size: 14px
+    font-family: "Roboto" , Arial, Helvetica, sans-serif
+    font-weight: 500
+    color: $greyTxt
+    background: $grey
+
+.all-page 
+    display: grid
+    grid-template-columns: 1fr 
+    grid-template-rows: auto auto auto auto 1fr auto auto
+    min-height: 100vh
+
+.grid
+    display: grid
+    grid-template-columns: 1fr repeat(7, minmax(auto, 138px)) 1fr
+
+.row 
+    display: flex
+    flex-wrap: wrap  
+
+%col 
+    padding: 0 15px
+
+.col
+    +make-cols
+        @extend %col
+
+.col-ex-small
+    +ex-small
+        +make-cols
+            padding: 0 15px
+
+
+.col-small
+    +small
+        +make-cols
+            padding: 0 15px
+
+.col-middle
+    +middle
+        +make-cols
+            padding: 0 15px
+                
+     

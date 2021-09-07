@@ -1,0 +1,136 @@
+.footer-up
+    background: url(../images/footer-up-bg.jpg) 0 0/cover no-repeat
+    padding: 18px 0
+
+.footer
+    color: #3e3f3f
+    background: url(../images/footer-bg.jpg) 0 0/cover repeat
+    padding-top: 9px
+    padding-bottom: 56px
+    &__about
+        grid-column: 2/9
+        padding: 0 15px
+        +small
+            grid-column: 2/4
+    &__title
+        text-transform: uppercase
+        font-size: 18px
+        text-align: center
+        margin-bottom: 16px
+        &_center
+            text-align: center
+        +ex-small
+            text-align: left
+            &_center
+                text-align: center
+
+    &__logo
+        padding-left: 0
+    &__text
+        font-size: 12px
+        line-height: 16px
+        margin-top: 27px
+        max-width: 221px
+
+    &__follow
+        grid-column: 2/9
+        justify-self: center
+        +small
+            grid-column: 4/6
+            border-left: 1px solid #edeeef
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__item
+        margin-top: 11px
+
+    &__link
+        text-decoration: none
+        text-transform: uppercase
+        color: #3e3f3f
+        font-size: 13px
+        position: relative
+        padding-left: 41px
+        &::before
+            content: ""
+            background: $red
+            position: absolute
+            top: -4px
+            left: 11px
+            width: 20px
+            height: 20px
+
+    .ic-fb:after
+        content: ""
+        position: absolute
+        background: url(../images/ic-smedia.png) -4px 0 no-repeat
+        top: -1px
+        left: 17px
+        width: 8px
+        height: 15px
+
+    .ic-tw:after
+        content: ""
+        position: absolute
+        background: url(../images/ic-smedia.png) 0 -28px no-repeat
+        top: 1px
+        left: 13px
+        width: 15px
+        height: 12px
+
+    .ic-gg:after
+        content: ""
+        position: absolute
+        background: url(../images/ic-smedia.png) 0 -55px no-repeat
+        top: 1px
+        left: 14px
+        width: 14px
+        height: 14px
+    
+    .ic-insta:after
+        content: ""
+        position: absolute
+        background: url(../images/ic-smedia.png) 0 -83px no-repeat
+        top: -1px
+        left: 14px
+        width: 14px
+        height: 14px
+
+    &__contact
+        grid-column: 2/9
+        padding: 0 0 0 23px
+        border-left: 1px solid #edeeef
+        +small
+            grid-column: 6/9
+        &-inner
+            display: flex
+            flex-wrap: wrap
+            margin-top: 18px
+            text-align: center
+            +ex-small
+                text-align: left
+        &-list
+            margin: 0
+            padding: 0
+            list-style: none
+        &-item
+            color: #3e3f3f
+            line-height: 21px
+        &-text 
+            color: #747474
+            margin-top: 0
+            line-height: 21px
+            +small
+                margin-left: 28px
+                max-width: 150px
+
+.footer-bottom
+    background: url(../images/footer-bottom.jpg) 0 0/cover repeat
+    padding-top: 4px
+    &__text
+        grid-column: 2/9
+        padding: 0 15px 0 19px 
+        color: #c3c3c3   
+        font-size: 12px       

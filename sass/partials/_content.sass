@@ -1,0 +1,27 @@
+.content
+    padding: 0 15px 
+    background: $grey
+    grid-template-rows: minmax(43px, auto) 1fr
+    &__search-form
+        grid-column: 2/9
+        +small
+            grid-column: 2/7
+            align-self: center
+    &__switch-btns
+        grid-column: 2/9
+        grid-row: 3/4
+        justify-self: end
+        +small
+            grid-column: 7/9
+            grid-row: 1/2
+            align-self: center
+    &__sidebar
+        grid-column: 2/9
+        +small
+            grid-column: 2/4
+    &__main-column
+        grid-column: 2/9
+        padding-bottom: 114px
+        +small
+            grid-column: 4/9
+

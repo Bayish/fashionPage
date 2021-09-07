@@ -1,0 +1,39 @@
+.header
+    background: $greyLight
+    grid-template-rows: minmax(60px, auto)
+    &__logo
+        grid-column: 1/9
+        padding: 0px 15px 0
+        align-self: center
+        justify-self: start
+        +small
+            grid-column: 2/5
+
+    &__activity
+        grid-column: 1/9
+        height: 65px
+        display: flex
+        flex-wrap: wrap
+        padding: 0 
+        justify-self: end
+        +small
+            grid-column: 5/9
+
+    &__btn
+        border: none
+        border-right: 1px solid $greyLight
+        background: $grey
+        padding: 5px 16px 0
+     
+    &__bag
+        color: $red
+        background: $grey url(../images/ic-bag.svg) 84% 50% no-repeat
+        padding: 5px 49px 0 25px
+        display: flex
+        align-items: center
+        letter-spacing: 0.1px
+
+    &__count-bag
+        color: $blackMd
+        
+            

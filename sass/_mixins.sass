@@ -1,0 +1,19 @@
+=ex-small
+    @media screen and (min-width: 480px) 
+        @content
+
+
+=small
+    @media screen and (min-width: 680px) 
+        @content
+
+=middle
+    @media screen and (min-width: 800px) 
+        @content     
+
+=make-cols 
+    @for $i from 1 through 12
+        $width-col: $i * 100%/12
+        &-#{$i} 
+            width: $width-col
+            @content
